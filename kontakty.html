@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Designové poštovní schránky na plot či zeď? Schránka antacitová či nerez? Ničemu se v podstatě nebráníme. U nás doladíte svůj domov. Domov tvoří detaily">
+        <meta name="keywords" content="čísla, dům, design, schránky, schránky na dům, čísla na dům, čísla na zakázku, schránka na zakázku, poštovní schránka">
+        <meta name="author" content="Magdalena Benešová">
+        <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://www.mujweb.cz/" target="_blank">
+        <link rel="icon" type="image/x-icon" href="C:\Users\Majda\Documents\HTML\zacatky\obrazky\logo.jpg">
+        <!--knihovna pro značky na socialní sítě-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Čísla na dům</title>
+        <style>
+            body{
+            font-family: Arial;
+            margin: 0;
+            }
+            /*zakulacení tlacitek pro socialni site*/
+            .fa {
+              padding: 20px;
+              font-size: 30px;
+              width: 70px;
+              text-align: center;
+              text-decoration: none;
+              margin: 5px 2px;
+              transition: 0.5s;
+            }
+            .fa:hover {
+              opacity: 0.7;
+            }
+            /* Facebook */
+            .fa-facebook {
+              background: #3BBBC2;
+              color: white;
+            }
+
+            /* Instagram */
+            .fa-instagram {
+              background: #3BBBC2;
+              color: white;
+            }
+            * {
+              box-sizing:border-box;
+            }
+
+            /*vrstva-mlha v pozadí*/
+            .overlay {
+              height: 100%;
+              width: 0;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              background-color: rgb(253,66,187);
+              background-color: rgba(253,66,187, 0.9);
+              overflow-x: hidden;
+              transition: 0.5s;
+            }
+            /*Umístění obsahu do vrstvy-mlha*/
+            .overlay-content {
+              position: relative;
+              top: 25%;
+              width: 100%;
+              text-align: center;
+              margin-top: 30px;
+            }
+            /*Navigační odkazy do vrstvy-mlha*/
+            .overlay a {
+              padding: 8px;
+              text-decoration: none;
+              font-size: 36px;
+              color: #ffffff;
+              display: block;
+              transition: 0.3s;
+            }
+            
+            /*Změna barvy při najetí myši na text*/
+            .overlay a:hover, .overlay a:focus {
+              color: #f1f1f1;
+            }
+            /*Umístění tlačítka pro zavření*/
+            .overlay .closebtn {
+              position: absolute;
+              top: 20px;
+              right: 45px;
+              font-size: 60px;
+            }
+            /* Když je výška obrazovky menší než 450 pixelů, změňte velikost písma odkazů a znovu umístěte tlačítko Zavřít, aby se nepřekrývaly */
+            @media screen and (max-height: 450px) {
+              .overlay a {font-size: 20px}
+              .overlay .closebtn {
+              font-size: 40px;
+              top: 15px;
+              right: 35px;
+              }
+            }
+            /*Nalepené logo*/
+            div.sticky {
+            position: -webkit-sticky; 
+            position: sticky;
+            top: 0;
+            }
+            /*kontaktní formulář*/
+            input[type="submit"] {
+                background: #6FA4F8;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 10px;
+                border: 0px;
+            }
+
+            input[type="submit"]:hover {
+                background: #2976f8;
+                color: #EEEEEE;
+                cursor: pointer;
+            }
+
+            input[type="text"], input[type="email"], input[type="password"] {
+                width: 250px;
+                border-radius: 5px;
+                border: 1px solid #aaaaaa;
+                padding: 0.3em;
+            }
+
+            input[type="submit"] {
+                padding: 10px 25px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px;
+                font-weight: bold;
+            }
+
+            textarea {
+                border-radius: 5px;
+                border: 1px solid #aaaaaa;
+                width: 483px;
+                height: 90px;
+            }
+            </style>
+    </head>
+    <body>
+        <!--meničko které se rozbaluje-->
+        <div id="myNav" class="overlay">
+            <a style="text-align: right" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="file:///C:/Users/Majda/Documents/HTML/zacatky/domov.html">Domov</a>
+              <a href="file:///C:/Users/Majda/Documents/HTML/zacatky/galerie.html">Galerie</a>
+              <a href="file:///C:/Users/Majda/Documents/HTML/zacatky/kosik.html">Košík</a>
+              <a href="file:///C:/Users/Majda/Documents/HTML/zacatky/kontakty.html">Kontakty</a>
+            </div>
+          </div>
+          
+          <span style="font-size:35px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+          <img  src="C:\Users\Majda\Documents\HTML\zacatky\obrazky\logo.jpg" alt="logo"  style="float:right;height:60px;" >
+          <script>
+          function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+          }
+          
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+          </script>
+        <h1>Kontakty</h1>
+        <p>Kontaktovat nás můžete buď, přes naše souciální sítě, telefonem nebo přes e-mail.</p>
+        <hr>
+        <p>Telefon: +420 777 212 873</p>
+        <p>E-mail: my2@gamil.com</p>
+        <p>Nebo můžete využít formulář níže:</p>
+        <form method="post" id="form-email">
+          Vaše emailová adresa<br />
+          <input type="email" name="email" required="required" value="<?php if (isset($_POST['email'])) echo(htmlspecialchars($_POST['email'])); ?>" /><br />
+          Antispam - zadejte aktuální rok<br />
+          <input type="text" name="rok" required="required" /><br />
+          <textarea name="zprava"><?php if (isset($_POST['zprava'])) echo(htmlspecialchars($_POST['zprava'])); ?></textarea><br />
+          <input type="submit" value="Odeslat" />
+        </form>
+        
+        <!--tlacitka pro socialní sítě-->
+        <a href="https://www.facebook.com/MY2postovnischranky" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/my2.cz/" style="float: right;" class="fa fa-instagram"></a>
+
+    </body>
+</html>
